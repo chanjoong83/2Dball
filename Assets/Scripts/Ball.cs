@@ -94,10 +94,10 @@ public class Ball : MonoBehaviour
             SceneManager.LoadScene(0);
             
         }
-        if(hole)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, goulPos, 0.1f);
-        }
+        //if(hole)
+        //{
+        //    transform.position = Vector2.MoveTowards(transform.position, goulPos, 0.1f);
+        //}
  
     }
 
@@ -137,24 +137,24 @@ public class Ball : MonoBehaviour
     //    }
     //}
 
-    private void FixedUpdate()
-    {
-        if(cameraMove)
-        {
-            Vector3 aa = targetPos.position;
-            asd.transform.position = Vector2.Lerp(asd.transform.position, aa, Time.deltaTime * 2f);
-        }
-        if ((asd.transform.position - targetPos.position).magnitude < 0.3f) ;
-        {
-            StartCoroutine("wait");
-            hole = false;
-            transform.position = targetPos.position;
+    //private void FixedUpdate()
+    //{
+    //    if(cameraMove)
+    //    {
+    //        Vector3 aa = targetPos.position;
+    //        asd.transform.position = Vector2.Lerp(asd.transform.position, aa, Time.deltaTime * 2f);
+    //    }
+    //    if ((asd.transform.position - targetPos.position).magnitude < 0.3f) ;
+    //    {
+    //        StartCoroutine("wait");
+    //        hole = false;
+    //        transform.position = targetPos.position;
             
-        }
+    //    }
 
    
         
-    }
+    //}
 
     IEnumerator wait()
     {
