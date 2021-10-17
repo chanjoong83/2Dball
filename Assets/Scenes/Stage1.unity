@@ -1035,11 +1035,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
+  asd: {fileID: 0}
   rb: {fileID: 0}
   ballColor: {fileID: 0}
   ballCount: 20
   ballCountText: {fileID: 1170667239}
   Arrow: {fileID: 1310088093}
+  hole: 0
+  isMouse: 0
+  targetPos: {fileID: 0}
+  targetPos1: {fileID: 0}
 --- !u!96 &600667726
 TrailRenderer:
   serializedVersion: 2
@@ -2864,6 +2869,7 @@ GameObject:
   - component: {fileID: 1598602462}
   - component: {fileID: 1598602461}
   - component: {fileID: 1598602460}
+  - component: {fileID: 1598602463}
   m_Layer: 0
   m_Name: Goul
   m_TagString: Goul
@@ -2962,6 +2968,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1598602463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598602459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24eaee02d654d0840ad38dcad4bc8709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!1 &1694864969
 GameObject:
   m_ObjectHideFlags: 0

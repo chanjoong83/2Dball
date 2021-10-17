@@ -113,29 +113,29 @@ public class Ball : MonoBehaviour
         if(collision.gameObject.tag =="Goul")
         collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
 
       
-        if ((collision.gameObject.tag == "Goul") && (ballColor.color == collision.gameObject.GetComponent<SpriteRenderer>().color))
-        {
-            hole = true;
-            rb.velocity = Vector2.zero;
-            goulPos =collision.gameObject.transform.position;
+    //    if ((collision.gameObject.tag == "Goul") && (ballColor.color == collision.gameObject.GetComponent<SpriteRenderer>().color))
+    //    {
+    //        hole = true;
+    //        rb.velocity = Vector2.zero;
+    //        goulPos =collision.gameObject.transform.position;
             
-            StartCoroutine(delayScene());
-            
-            
-        }else if((collision.gameObject.tag == "Goul1") && (ballColor.color == collision.gameObject.GetComponent<SpriteRenderer>().color))
-        {
-            hole = true;
-            rb.velocity = Vector2.zero;
-            goulPos = collision.gameObject.transform.position;
-            cameraMove = true;
+    //     //   StartCoroutine(delayScene());
             
             
-        }
-    }
+    //    }else if((collision.gameObject.tag == "Goul1") && (ballColor.color == collision.gameObject.GetComponent<SpriteRenderer>().color))
+    //    {
+    //        hole = true;
+    //        rb.velocity = Vector2.zero;
+    //        goulPos = collision.gameObject.transform.position;
+    //        cameraMove = true;
+            
+            
+    //    }
+    //}
 
     private void FixedUpdate()
     {
@@ -162,12 +162,7 @@ public class Ball : MonoBehaviour
     }
 
 
-    IEnumerator delayScene()
-    {
-        
-        yield return new WaitForSeconds(0.4f);
-        SceneManager.LoadScene(1);
-    }
+
 
     //void RandomColor()
     //{
