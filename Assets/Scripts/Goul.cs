@@ -38,7 +38,7 @@ public class Goul : MonoBehaviour
         if(holdBall)
         {
             ball.rb.velocity = Vector2.zero;
-            ball.transform.position = Vector2.MoveTowards(ball.transform.position, transform.position, 0.1f);
+          //  ball.transform.position = Vector2.MoveTowards(ball.transform.position, transform.position, 0.1f);
             StartCoroutine(delayScene());
         }
     }
