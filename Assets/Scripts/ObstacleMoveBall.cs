@@ -9,13 +9,15 @@ public class ObstacleMoveBall : MonoBehaviour
     public float speed ;
 
     Rigidbody2D rb;
-    public GameObject preBall;
+    
     
     public int ballCount;
     public Text ballCountText;
 
+    //public bool boolExplosion;
 
-    [SerializeField] GameObject m_goPrefab = null;
+
+    [SerializeField] GameObject m_goPrefab;
     [SerializeField] float m_force = 0;
     [SerializeField] Vector3 m_offset = Vector3.zero;
 
@@ -47,6 +49,7 @@ public class ObstacleMoveBall : MonoBehaviour
         }
         Debug.Log("4");
         gameObject.SetActive(false);
+
     }
 
 
@@ -59,6 +62,8 @@ public class ObstacleMoveBall : MonoBehaviour
             ballCountText.text = ballCount.ToString();
             if(ballCount==0)
             {
+                
+              
                 Explosion();
             }
             
