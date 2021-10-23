@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05321129fcd69a14d8513c11efe44447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMoving: {fileID: 1302692451}
-  ohtertal: {fileID: 158724350}
+  cameraMoving: {fileID: 1302692450}
+  ohtertal: {fileID: 158724349}
   spriteRenderer: {fileID: 0}
   holdBall: 0
   camera: {fileID: 519420031}
@@ -172,8 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05321129fcd69a14d8513c11efe44447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMoving: {fileID: 0}
-  ohtertal: {fileID: 0}
+  cameraMoving: {fileID: 160093023}
+  ohtertal: {fileID: 149085367}
   spriteRenderer: {fileID: 0}
   holdBall: 0
   camera: {fileID: 519420031}
@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160093023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.85, y: 3.17, z: -2}
+  m_LocalPosition: {x: 0.06, y: -0.31, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1455,6 +1455,10 @@ PrefabInstance:
     - target: {fileID: 5409647670421703113, guid: 185c3c0fc4fa2bd4ba9eb43e0c2d9853, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409647670421703115, guid: 185c3c0fc4fa2bd4ba9eb43e0c2d9853, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5409647670421703116, guid: 185c3c0fc4fa2bd4ba9eb43e0c2d9853, type: 3}
       propertyPath: m_Name
