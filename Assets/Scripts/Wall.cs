@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Tools;
 
 public class Wall : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Wall : MonoBehaviour
     public List<Color> colors;
     public Ball ball;
     //public Color color;
+
+    public MMProgressBar mProgressBar;
 
     void Start()
     {
@@ -34,6 +37,7 @@ public class Wall : MonoBehaviour
             //ball.spriteRendererWall.color = color;
             collision.gameObject.GetComponent<SpriteRenderer>().color = color;
             ball.ballCount--;
+            mProgressBar.UpdateBar01(ball.ballCount*0.1f);
             ball.ballCountText.text = ball.ballCount.ToString();
             //if(ball.ballCount<=0)
             //{
