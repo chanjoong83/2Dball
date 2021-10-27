@@ -34,7 +34,7 @@ namespace MoreMountains.Feel
             {
                 SnakeFood food = Instantiate(SnakeFoodPrefab);
                 food.transform.position = DetermineSpawnPosition();
-                food.Spawner = this;
+             //   food.Spawner = this;
                 Foods.Add(food);
             }
         }

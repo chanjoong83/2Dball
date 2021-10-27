@@ -10,7 +10,7 @@ public class Wall : MonoBehaviour
     public List<Color> colors;
     public Ball ball;
     //public Color color;
-
+    
     public MMProgressBar mProgressBar;
 
     void Start()
@@ -37,7 +37,8 @@ public class Wall : MonoBehaviour
             //ball.spriteRendererWall.color = color;
             collision.gameObject.GetComponent<SpriteRenderer>().color = color;
             ball.ballCount--;
-            mProgressBar.UpdateBar01(ball.ballCount*0.1f);
+          //  mProgressBar.UpdateBar01(ball.ballCount*0.1f);
+            mProgressBar.UpdateBar(ball.ballCount, 0f, 20f);
             ball.ballCountText.text = ball.ballCount.ToString();
             //if(ball.ballCount<=0)
             //{

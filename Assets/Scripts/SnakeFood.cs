@@ -7,11 +7,12 @@ using UnityEngine;
 
 namespace MoreMountains.Feel
 {
-    /// <summary>
-    /// This class handles Feel's Snake demo's food objects, that the snake has to eat to score points
-    /// </summary>
-    public class SnakeFood : MonoBehaviour
+    
+   
+public class SnakeFood : MonoBehaviour
     {
+    public Ball ball;
+        
         /// a duration (in seconds) during which the food is inactive before moving it to another position
         public float OffDelay = 1f;
         /// the food's visual representation
@@ -20,25 +21,25 @@ namespace MoreMountains.Feel
         public MMFeedbacks EatFeedback;
         /// a feedback to play when food appears
         public MMFeedbacks AppearFeedback;
-        /// the food spawner
-        public SnakeFoodSpawner Spawner { get; set; }
-        
-        protected Snake _snake;
-        
-        /// <summary>
-        /// When this food gets eaten, we play its eat feedback, and start moving it somewhere else in the scene
-        /// </summary>
-        /// <param name="other"></param>
-        protected void OnTriggerEnter2D(Collider2D other)
-        {
-            _snake = other.GetComponent<Snake>();
 
-            if (_snake != null)
-            {
-                _snake.Eat();
-                EatFeedback?.PlayFeedbacks();
-                StartCoroutine(MoveFood());
-            }
+    public MMProgressBar mProgressBar;
+    /// the food spawner
+    //    public SnakeFoodSpawner Spawner { get; set; }
+
+    //  protected Snake _snake;
+
+
+    /// <summary>
+    /// When this food gets eaten, we play its eat feedback, and start moving it somewhere else in the scene
+    /// </summary>
+    /// <param name="other"></param>
+    protected void OnTriggerEnter2D(Collider2D other)
+        {
+        mProgressBar.UpdateBar(20, 0, 20);
+            this.gameObject.SetActive(false);
+  //          _snake = other.GetComponent<Snake>();
+
+    //        if (_snake != null)
         }
 
         /// <summary>
@@ -50,8 +51,8 @@ namespace MoreMountains.Feel
             Model.SetActive(false);
             yield return MMCoroutine.WaitFor(OffDelay);
             Model.SetActive(true);
-            this.transform.position = Spawner.DetermineSpawnPosition();
+      //      this.transform.position = Spawner.DetermineSpawnPosition();
             AppearFeedback?.PlayFeedbacks();
         }
-    }
+}
 }
