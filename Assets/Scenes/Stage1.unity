@@ -32257,7 +32257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22853891040a0ec409c2ba44a96285d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
+  ball: {fileID: 600667725}
   OffDelay: 0.5
   Model: {fileID: 1844642855}
   EatFeedback: {fileID: 487252060}
@@ -37937,41 +37937,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2718838773834176233, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_CameraType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2718838773834176233, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920142579321772, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920142579321772, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920142579321772, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 662
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920143062037436, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3510539755128009384, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
       propertyPath: m_Name
       value: UICamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 3510539755128009385, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
       propertyPath: m_RootOrder
@@ -38015,14 +37983,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3529273386563675526, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3723182369467665000, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_PixelPerfect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -58501,7 +58461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22853891040a0ec409c2ba44a96285d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
+  ball: {fileID: 600667725}
   OffDelay: 0.5
   Model: {fileID: 5948120798772043661}
   EatFeedback: {fileID: 4068145410614458505}

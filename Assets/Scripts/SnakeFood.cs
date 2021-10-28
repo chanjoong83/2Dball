@@ -36,7 +36,9 @@ public class SnakeFood : MonoBehaviour
     protected void OnTriggerEnter2D(Collider2D other)
         {
         mProgressBar.UpdateBar(20, 0, 20);
+            ball.ballCount = 20;
             this.gameObject.SetActive(false);
+            
   //          _snake = other.GetComponent<Snake>();
 
     //        if (_snake != null)
