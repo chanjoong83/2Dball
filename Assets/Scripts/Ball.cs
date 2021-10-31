@@ -91,8 +91,12 @@ public class Ball : MonoBehaviour
         if(ballCount <=0)
         {
             Destroy(this.gameObject);
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
             
+
+
         }
         //if(hole)
         //{
