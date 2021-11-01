@@ -7,29 +7,33 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
 
     public Rigidbody2D rigidbody2D;
-    public Ball ball;
+    //public Ball ball;
     Vector2 dir;
     
-    [SerializeField]
-    int speed;
+    [SerializeField]int speed;
+    [SerializeField] LayerMask m_layerMask;
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        Balltarget();
+        SearchBall();
      //   ball = FindObjectOfType<Ball>();
     }
-    private void Update()
+
+
+    void SearchBall()
     {
-        Balltarget();
+        Collider2D collider2D = Physics2D.OverlapCircle(transform.position, 300, m_layerMask);
+        Vector2 dir = (collider2D.transform.position - transform.position).normalized;
+        rigidbody2D.AddForce(dir * speed );
+
     }
 
-
-
-    void Balltarget()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.tag == "Wall")
+        {
+            Destroy(this.gameObject);
 
-       Vector2 dir = (ball.transform.position- transform.position).normalized;
-        rigidbody2D.AddForce(dir*speed*Time.deltaTime);
-        Debug.Log(dir);
+        }
     }
 }
