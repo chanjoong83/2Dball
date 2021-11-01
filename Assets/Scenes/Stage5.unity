@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!20 &169736657 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 3529273386563675526, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-  m_PrefabInstance: {fileID: 1803542935}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &287504943
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +177,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!61 &287504946
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -512,7 +506,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -525,7 +519,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -541,39 +534,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras:
-  - {fileID: 169736657}
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -739,7 +699,7 @@ Transform:
   m_LocalScale: {x: 3.6084726, y: 0.3125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &540783756
 MonoBehaviour:
@@ -885,7 +845,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!1 &596501881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +976,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!1 &600667720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1099,7 @@ Transform:
   - {fileID: 1481983479}
   - {fileID: 1310088094}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &600667725
 MonoBehaviour:
@@ -1159,7 +1117,7 @@ MonoBehaviour:
   asd: {fileID: 0}
   rb: {fileID: 0}
   ballColor: {fileID: 0}
-  ballCount: 20
+  ballCount: 1000
   ballCountText: {fileID: 1170667239}
   Arrow: {fileID: 1310088093}
   hole: 0
@@ -1327,7 +1285,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!61 &767479403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1443,7 +1400,7 @@ Transform:
   - {fileID: 1984975699}
   - {fileID: 1020051965}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947470799
 GameObject:
@@ -1499,7 +1456,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!61 &947470802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1631,7 +1587,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!61 &1020051967
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1808,7 +1763,7 @@ Transform:
   m_LocalScale: {x: 2.346094, y: 0.2125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1088520021
 MonoBehaviour:
@@ -2062,7 +2017,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!1 &1310088093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,7 +2153,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!61 &1355507214
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2408,7 +2361,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!1 &1481983478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,7 +2582,7 @@ Transform:
   m_LocalScale: {x: 13.121718, y: 0.02, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1592882017
 GameObject:
@@ -2786,7 +2738,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!111 &1609963404
 Animation:
@@ -2913,94 +2865,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1803542935
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2718838773834176233, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_CameraType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -184
-      objectReference: {fileID: 0}
-    - target: {fileID: 3508920143062037436, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3510539755128009384, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_Name
-      value: UICamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.13041115
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.47270355
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -28.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3512000670037710212, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
---- !u!114 &1810952158 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3508920142323691495, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-  m_PrefabInstance: {fileID: 1803542935}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a42a23ce4f9ed24abde69beacbef2f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1867509750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3155,7 +3019,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.88748884, a: 1}
   - {r: 0.6132076, g: 0.44833574, b: 0.44833574, a: 1}
   ball: {fileID: 600667725}
-  mProgressBar: {fileID: 1810952158}
 --- !u!61 &1984975701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3354,7 +3217,7 @@ Transform:
   m_LocalScale: {x: 13.121718, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -50.187}
 --- !u!1 &2003935641
 GameObject:
@@ -3545,7 +3408,7 @@ Transform:
   m_LocalScale: {x: 2.2, y: 0.5201028, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140990230
 GameObject:
@@ -3579,7 +3442,7 @@ Transform:
   - {fileID: 2003935642}
   - {fileID: 1592882018}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &2924825676596233154
 CircleCollider2D:
@@ -3609,7 +3472,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.7853982
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -3682,7 +3545,7 @@ Transform:
   m_Children:
   - {fileID: 1867509751}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 80.98}
 --- !u!1 &2924825676596233158
 GameObject:
@@ -3718,7 +3581,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 500
   ballCount: 10
-  ballminus: 2
   ballCountText: {fileID: 378372167}
   m_goPrefab: {fileID: 5409647670421703116, guid: 185c3c0fc4fa2bd4ba9eb43e0c2d9853, type: 3}
   m_force: 0

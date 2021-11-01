@@ -9,10 +9,9 @@ public class ObstacleMoveBall : MonoBehaviour
     public float speed ;
 
     Rigidbody2D rb;
-    public Ball ball;
+    
     
     public int ballCount;
-    public int ballminus;
     public Text ballCountText;
 
     //public bool boolExplosion;
@@ -59,11 +58,8 @@ public class ObstacleMoveBall : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ball")
         {
-            ballCount = ballCount--;
-            
+            ballCount--;
             ballCountText.text = ballCount.ToString();
-
-            ball.ballCount = ball.ballCount - ballminus;
             if(ballCount==0)
             {
                 
