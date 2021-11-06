@@ -9,6 +9,7 @@ TagManager:
   - Ostacle
   - Goul
   - Goul1
+  - Bullet
   layers:
   - Default
   - TransparentFX

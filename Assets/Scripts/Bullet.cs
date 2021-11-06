@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
 
     public Rigidbody2D rigidbody2D;
-    //public Ball ball;
+    public Ball ball;
     Vector2 dir;
     
     [SerializeField]int speed;
@@ -25,6 +25,7 @@ public class Bullet : MonoBehaviour
         Collider2D collider2D = Physics2D.OverlapCircle(transform.position, 300, m_layerMask);
         Vector2 dir = (collider2D.transform.position - transform.position).normalized;
         rigidbody2D.AddForce(dir * speed );
+        
 
     }
 
@@ -35,5 +36,6 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject);
 
         }
+    
     }
 }
