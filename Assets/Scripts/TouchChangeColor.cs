@@ -10,7 +10,6 @@ public class TouchChangeColor : MonoBehaviour
     public Color[] colors;
     SpriteRenderer spriteRenderer;
     BoxCollider2D boxCollider2D;
-    public bool TCC;
 
     int i;
     void Start()
@@ -31,10 +30,6 @@ public class TouchChangeColor : MonoBehaviour
             spriteRenderer.color = colors[i];
             if (i == 3)
             {
-                if(TCC)
-                {
-                    Destroy(this.gameObject);
-                }
                 i = 0;
             }
             CheckBallColor();

@@ -46,12 +46,6 @@ public class Goul : MonoBehaviour
     {
 
         yield return new WaitForSeconds(0.4f);
-        NextSences();
-    }
-
-    public void NextSences()
-    {
-        Debug.Log(currentSceneNumber);
         SceneManager.LoadScene(currentSceneNumber + 1);
     }
 

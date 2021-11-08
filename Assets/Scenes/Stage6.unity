@@ -1162,13 +1162,10 @@ MonoBehaviour:
   ballCount: 20
   ballCountText: {fileID: 1170667239}
   Arrow: {fileID: 1310088093}
-  mProgressBar: {fileID: 1810952158}
-  m_RadialBarC: {fileID: 1489399756}
   hole: 0
   isMouse: 0
   targetPos: {fileID: 0}
   targetPos1: {fileID: 0}
-  isMoveball: 0
 --- !u!96 &600667726
 TrailRenderer:
   serializedVersion: 2
@@ -2512,17 +2509,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 7
   m_TargetDisplay: 0
---- !u!114 &1489399756 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1232134603198890120, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
-  m_PrefabInstance: {fileID: 1803542935}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a42a23ce4f9ed24abde69beacbef2f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1502412707
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,6 +2920,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2718838773834176233, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+      propertyPath: m_CameraType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -184
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508920143062037436, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3510539755128009384, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
       propertyPath: m_Name
       value: UICamera

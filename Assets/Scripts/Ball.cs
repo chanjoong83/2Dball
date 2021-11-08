@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using MoreMountains.Tools;
-
 public class Ball : MonoBehaviour
 {
     [SerializeField] 
@@ -21,9 +19,6 @@ public class Ball : MonoBehaviour
     public int ballCount;
     public Text ballCountText;
     public GameObject Arrow;
-    public MMProgressBar mProgressBar;
-    public MMProgressBar m_RadialBarC;
-
 
     Vector3 fristMousePos, MousePos ,dir;
     public bool hole, isMouse;
@@ -33,9 +28,7 @@ public class Ball : MonoBehaviour
 
     public Transform targetPos;
     public Transform targetPos1;
-    public bool isMoveball;
 
-    float time=3f;
 
 
 
@@ -62,59 +55,40 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-        if (isMoveball)
+        if(Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
-            {
+            
+            fristMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 2);
 
-                fristMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 2);
-
-                Arrow.SetActive(true);
-                // dir = (transform.position - fristMousePos).normalized;
+            Arrow.SetActive(true);
+            // dir = (transform.position - fristMousePos).normalized;
 
 
-            }
-            if (Input.GetMouseButton(0))
-            {
-                MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 2);
-                dir = (fristMousePos - MousePos).normalized;
-                distance = (fristMousePos - MousePos).magnitude;
-                distance = Mathf.Clamp(distance, 1, 3);
-                Arrow.transform.localScale = new Vector3(distance, 1, 1);
-                Arrow.transform.right = dir;
-
-            }
-
-
-            if (Input.GetMouseButtonUp(0))
-            {
-
-                Arrow.SetActive(false);
-
-
-
-                speed = VelocityPos(fristMousePos, MousePos);
-
-                rb.AddForce(dir * speed * 100);
-                isMoveball = false;
-                
-            }
         }
-        if (!isMoveball)
+        if(Input.GetMouseButton(0))
         {
-            //m_RadialBarC.UpdateBar01(time);
-            m_RadialBarC.UpdateBar(time,0,3f);
-            Debug.Log(time);
-            time -= Time.deltaTime;
-            if(time <-0.5f)
-            {
-                Debug.Log(time);
-                isMoveball = true;
-                time = 3;
-            }
+            MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 2);
+            dir = (fristMousePos - MousePos).normalized;
+            distance = (fristMousePos-MousePos).magnitude;
+            distance = Mathf.Clamp(distance, 1, 3);
+            Arrow.transform.localScale = new Vector3(distance,1, 1);
+            Arrow.transform.right = dir;
+            
         }
+       
 
-        if (ballCount <=0)
+        if(Input.GetMouseButtonUp(0))
+        {
+            
+            Arrow.SetActive(false);
+            
+           
+            
+           speed =  VelocityPos(fristMousePos, MousePos);
+            
+            rb.AddForce(dir * speed*100);
+        }
+        if(ballCount <=0)
         {
             Destroy(this.gameObject);
             SceneManager.LoadScene(0);
@@ -136,26 +110,12 @@ public class Ball : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Goul")
-        {
-            collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
-        }
-        else if (collision.gameObject.tag == "Bullet")
-        {
-            Debug.Log("1");
-            ballCount--;
-        }
+        if(collision.gameObject.tag =="Goul")
+        collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag =="Bullet")
-        {
-            Debug.Log("00");
-            ballCount--;
-            mProgressBar.UpdateBar(ballCount, 0f, 20f);
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
 
-        }
-    }
       
     //    if ((collision.gameObject.tag == "Goul") && (ballColor.color == collision.gameObject.GetComponent<SpriteRenderer>().color))
     //    {
