@@ -6,6 +6,7 @@ public class turnColors : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
     public List<Color> colors;
+    public bool m_RandomColor;
     Ball ball;
 
     BoxCollider2D boxCollider2;
@@ -19,17 +20,29 @@ public class turnColors : MonoBehaviour
 
     IEnumerator ChangeColor()
     {
-
-        while(true)
+        if(m_RandomColor)
         {
-            for (int i = 0; i < colors.Count; i++)
+            while (true)
             {
-             
+                int randomColor = Random.Range(0, 3);
                 yield return new WaitForSeconds(1);
-                spriteRenderer.color = colors[i];
-
+                spriteRenderer.color = colors[randomColor];
             }
         }
+        else
+        {
+            while (true)
+            {
+                for (int i = 0; i < colors.Count; i++)
+                {
+
+                    yield return new WaitForSeconds(1);
+                    spriteRenderer.color = colors[i];
+
+                }
+            }
+        }
+        
         
        
     }
