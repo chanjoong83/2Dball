@@ -1166,10 +1166,13 @@ MonoBehaviour:
   isMouse: 0
   targetPos: {fileID: 0}
   targetPos1: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   isMoveball: 1
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 3ad6932 (Merge branch 'test' of https://github.com/chanjoong83/2Dball into test)
 --- !u!96 &600667726
 TrailRenderer:
   serializedVersion: 2

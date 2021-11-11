@@ -1872,6 +1872,7 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 1, a: 1}
   - {r: 0, g: 0.9019608, b: 0.14509805, a: 1}
   - {r: 0, g: 0, b: 1, a: 1}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   TCC: 0
@@ -2000,6 +2001,8 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 3ad6932 (Merge branch 'test' of https://github.com/chanjoong83/2Dball into test)
 --- !u!1 &1170667237
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,6 +3130,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2718838773834176233, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
       propertyPath: m_CameraType
+<<<<<<< HEAD
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
@@ -3134,6 +3138,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+=======
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508920142618623089, guid: eea454743a0cda84589f0cbbea77c1d5, type: 3}
+>>>>>>> parent of 3ad6932 (Merge branch 'test' of https://github.com/chanjoong83/2Dball into test)
       propertyPath: m_AnchorMin.y
       value: 1
       objectReference: {fileID: 0}
@@ -3946,6 +3959,7 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!114 &2924825676596233161
@@ -4031,3 +4045,5 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e06eb5546e39246a89e69cc711523a, type: 3}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 3ad6932 (Merge branch 'test' of https://github.com/chanjoong83/2Dball into test)
